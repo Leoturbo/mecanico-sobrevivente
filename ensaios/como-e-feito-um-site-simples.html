@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Como é feito um site simples por dentro (o código)</title>
+  <meta name="description" content="A estrutura de um site como o de Paul Graham explicada na prática: um exemplo completo de página em HTML puro, com menos de 2 KB, e por que esse modelo gera milhões de acessos.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Início</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>Como é feito um site simples por dentro (o código)</h1>
+      <p><time datetime="2026-07-10">10 de julho de 2026</time></p>
+
+      <p>Para entender exatamente como funciona a estrutura de um site como o de <a href="https://paulgraham.com/">Paul Graham</a> ou o <a href="https://daringfireball.net/">Daring Fireball</a>, imagine que eles são construídos como um documento do Microsoft Word antigo. Não existem efeitos visuais, menus flutuantes ou decorações de design modernas.</p>
+
+      <p>O código-fonte de um site desse tipo utiliza o HTML puro e bruto.</p>
+
+      <h2>Exemplo visual e estrutural</h2>
+      <p>Se você criasse uma página com a lógica deles hoje, o resultado na tela seria apenas isto: um título, um parágrafo de boas-vindas e uma lista de artigos datados com links azuis:</p>
+
+      <blockquote>
+        <p><strong>📝 Meu Blog Pessoal</strong></p>
+        <p>Bem-vindo ao meu site simples. Eu escrevo sobre tecnologia, negócios e ideias de forma direta, sem anúncios ou distrações.</p>
+        <p><strong>Meus Ensaios e Artigos</strong></p>
+        <ul>
+          <li>[05/07/2026] — Como começar um negócio pequeno sem dinheiro</li>
+          <li>[28/06/2026] — Por que o excesso de tecnologia estraga a internet</li>
+          <li>[15/06/2026] — O segredo para escrever textos que as pessoas querem ler</li>
+          <li>[01/06/2026] — Aprenda HTML básico em menos de 10 minutos</li>
+        </ul>
+        <p>Contato: voce@seuemail.com | Criado inteiramente em HTML puro.</p>
+      </blockquote>
+
+      <h2>Como esse site é feito por trás das câmeras (o código)</h2>
+      <p>Para colocar esse site no ar, você só precisa copiar o texto abaixo, colar em um bloco de notas e salvar o arquivo com o nome de <code>index.html</code>. O código não tem nenhuma linha de programação complexa:</p>
+
+      <pre style="overflow-x: auto; font-size: 0.8rem; line-height: 1.4;"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;title&gt;Meu Blog Pessoal&lt;/title&gt;
+&lt;/head&gt;
+&lt;body style="font-family: sans-serif; max-width: 600px;
+             margin: 40px auto; padding: 0 20px;
+             line-height: 1.6; color: #333;"&gt;
+
+    &lt;h1&gt;📝 Meu Blog Pessoal&lt;/h1&gt;
+
+    &lt;p&gt;Bem-vindo ao meu site simples. Eu escrevo sobre
+    tecnologia, negócios e ideias de forma direta,
+    sem anúncios ou distrações.&lt;/p&gt;
+
+    &lt;h3&gt;Meus Ensaios e Artigos&lt;/h3&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;[05/07/2026]&lt;/strong&gt; -
+            &lt;a href="artigo1.html"&gt;Como começar um negócio
+            pequeno sem dinheiro&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;[28/06/2026]&lt;/strong&gt; -
+            &lt;a href="artigo2.html"&gt;Por que o excesso de
+            tecnologia estraga a internet&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;[15/06/2026]&lt;/strong&gt; -
+            &lt;a href="artigo3.html"&gt;O segredo para escrever
+            textos que as pessoas querem ler&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;[01/06/2026]&lt;/strong&gt; -
+            &lt;a href="artigo4.html"&gt;Aprenda HTML básico
+            em menos de 10 minutos&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;hr&gt;
+    &lt;p style="font-size: 0.9em; color: #666;"&gt;
+        Contato: voce@seuemail.com |
+        Criado inteiramente em HTML puro.&lt;/p&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <h2>Por que esse modelo exato gera milhões de acessos?</h2>
+      <ol>
+        <li><strong>Velocidade extrema:</strong> o arquivo acima pesa menos de 2 KB. Um site moderno feito em WordPress ou com layouts pesados costuma passar de 3.000 KB. O robô do Google lê essa página em um piscar de olhos.</li>
+        <li><strong>Foco no texto:</strong> toda a força da página está nas palavras-chave e nos links (as tags <code>&lt;a&gt;</code>). O Google adora links organizados em listas simples porque são fáceis de rastrear.</li>
+        <li><strong>Fácil de manter:</strong> você não precisa atualizar plug-ins, não sofre os ataques de vírus mais comuns e nunca terá problemas com o servidor caindo por excesso de peso técnico.</li>
+      </ol>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">Sites Simples</a> — feito à mão em HTML.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>O mapa prático: hospedagem grátis, código pronto e rotina de escrita</title>
+  <meta name="description" content="Três passos para criar um site no estilo Paul Graham ou John Gruber hoje mesmo: onde hospedar de graça (GitHub Pages, Vercel, Netlify), um código HTML pronto para usar e a estratégia de conteúdo.">
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="../index.html">← Início</a>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h1>O mapa prático: hospedagem grátis, código pronto e rotina de escrita</h1>
+      <p><time datetime="2026-07-10">10 de julho de 2026</time></p>
+
+      <p>Para criar um site exatamente no estilo de Paul Graham ou John Gruber, você precisa seguir três passos fundamentais: escolher onde colocar o site de graça, estruturar o código de forma leve e definir a sua rotina de escrita.</p>
+
+      <p>Aqui está o mapa prático para colocar o seu projeto no ar hoje mesmo.</p>
+
+      <h2>Passo 1: escolha a hospedagem gratuita e veloz</h2>
+      <p>Como o seu site será feito apenas de texto e arquivos leves (HTML/CSS), você não precisa pagar por hospedagens pesadas como as de WordPress. Use plataformas focadas em desenvolvedores, que entregam uma velocidade imbatível de graça:</p>
+      <ul>
+        <li><strong>GitHub Pages:</strong> a melhor opção do mundo. Você guarda os seus arquivos de texto lá e o GitHub os transforma em um site acessível para qualquer pessoa.</li>
+        <li><strong>Vercel ou Netlify:</strong> plataformas modernas onde você arrasta a pasta do seu site e ela entra no ar instantaneamente.</li>
+      </ul>
+
+      <h2>Passo 2: o código estrutural (pronto para usar)</h2>
+      <p>Crie um arquivo chamado <code>index.html</code> e cole o código abaixo. Ele já vem configurado com uma tipografia bonita e limpa (estilo jornalístico), mas sem nenhuma firula visual que atrase o carregamento:</p>
+
+      <pre style="overflow-x: auto; font-size: 0.8rem; line-height: 1.4;"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport"
+          content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Seu Nome - Ideias e Ensaios&lt;/title&gt;
+    &lt;style&gt;
+        body {
+            font-family: Georgia, serif; /* fonte clássica de leitura */
+            max-width: 650px;    /* largura que não cansa os olhos */
+            margin: 40px auto;   /* centraliza o site na tela */
+            padding: 0 20px;
+            line-height: 1.8;    /* espaçamento confortável */
+            color: #111;         /* texto quase preto */
+            background-color: #fcfcfc; /* fundo off-white */
+        }
+        h1 { font-size: 2.2em; margin-bottom: 5px; }
+        h2 { font-size: 1.5em; margin-top: 40px; }
+        .sub { color: #666; font-style: italic;
+               margin-bottom: 40px; }
+        ul { list-style-type: none; padding: 0; }
+        li { margin-bottom: 15px; }
+        a { color: #0066cc; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        hr { border: 0; border-top: 1px solid #eee;
+             margin: 40px 0; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+    &lt;h1&gt;Seu Nome&lt;/h1&gt;
+    &lt;div class="sub"&gt;Pensamentos sobre negócios,
+        tecnologia e cotidiano.&lt;/div&gt;
+
+    &lt;p&gt;Este é o meu canto na internet. Aqui eu escrevo
+    de forma direta sobre o que estou aprendendo, criando
+    e observando no mundo, sem distração de anúncios
+    ou pop-ups.&lt;/p&gt;
+
+    &lt;h2&gt;Ensaios Recentes&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;Jul 2026&lt;/strong&gt; —
+            &lt;a href="artigos/primeiro-texto.html"&gt;O título do
+            seu ensaio mais profundo aqui&lt;/a&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;strong&gt;Jun 2026&lt;/strong&gt; —
+            &lt;a href="artigos/segundo-texto.html"&gt;Uma análise
+            sobre o mercado ou tecnologia&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;h2&gt;Notas e Curadorias&lt;/h2&gt;
+    &lt;ul&gt;
+        &lt;li&gt;&lt;strong&gt;08/07&lt;/strong&gt; —
+            &lt;a href="https://link-externo.com"&gt;Li esse artigo
+            incrível hoje&lt;/a&gt; e acho que a inteligência
+            artificial vai mudar este setor por este motivo
+            específico...&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;hr&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Inscreva-se na minha &lt;a href="#"&gt;Newsletter&lt;/a&gt; |
+        Contato: &lt;a href="mailto:voce@email.com"&gt;
+        voce@email.com&lt;/a&gt;&lt;/p&gt;
+    &lt;/footer&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+      <h2>Passo 3: a estratégia de conteúdo (como eles escrevem)</h2>
+      <p>Para atrair o fluxo, seu site precisa seguir a mentalidade de um dos dois:</p>
+      <ol>
+        <li><strong>Se você quer o estilo Paul Graham (ensaios):</strong> escreva textos longos (mais de 1.000 palavras) apenas quando tiver uma visão muito clara sobre um assunto. Publique poucas vezes (1 ou 2 vezes por mês), mas garanta que o texto seja tão bom que as pessoas queiram salvar nos favoritos.</li>
+        <li><strong>Se você quer o estilo John Gruber (notas diárias):</strong> acesse a internet de manhã, leia as notícias do seu nicho, escolha uma, coloque o link dela e comente com três frases sinceras dizendo por que aquela notícia importa (ou por que ela está errada). Faça isso todo santo dia.</li>
+      </ol>
+    </article>
+  </main>
+
+  <footer>
+    <p><a href="../index.html">Sites Simples</a> — feito à mão em HTML.</p>
+  </footer>
+</body>
+</html>

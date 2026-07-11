@@ -1,0 +1,68 @@
+/* Folha de estilo única do site — mantida propositalmente pequena. */
+
+:root {
+  --texto: #1a1a1a;
+  --fundo: #ffffff;
+  --link: #0000cc;
+  --link-visitado: #551a8b;
+  --suave: #666666;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --texto: #e6e6e6;
+    --fundo: #121212;
+    --link: #8ab4f8;
+    --link-visitado: #c58af9;
+    --suave: #999999;
+  }
+}
+
+body {
+  max-width: 38rem;
+  margin: 0 auto;
+  padding: 2rem 1rem 4rem;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: var(--texto);
+  background: var(--fundo);
+}
+
+h1, h2, h3 {
+  font-family: inherit;
+  line-height: 1.25;
+}
+
+h1 { font-size: 1.6rem; }
+h2 { font-size: 1.25rem; margin-top: 2.5rem; }
+
+a { color: var(--link); }
+a:visited { color: var(--link-visitado); }
+
+header nav {
+  margin-bottom: 3rem;
+  font-size: 0.9rem;
+}
+
+time, .meta {
+  color: var(--suave);
+  font-size: 0.85rem;
+}
+
+ul.lista-ensaios {
+  list-style: none;
+  padding: 0;
+}
+
+ul.lista-ensaios li {
+  margin-bottom: 0.75rem;
+}
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--suave);
+  font-size: 0.85rem;
+  color: var(--suave);
+}
